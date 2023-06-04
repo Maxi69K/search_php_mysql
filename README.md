@@ -21,8 +21,8 @@ CREATE TABLE accounts_table (
 ALTER TABLE accounts_table ADD FOREIGN KEY (user_id) REFERENCES users_table (user_id) ON UPDATE CASCADE ON DELETE RESTRICT;
 
 INSERT INTO users_table VALUES
-(NULL, 'Goran', 'Kekez'),
-(NULL, 'Marko', 'Markovic');
+(NULL, 'John', 'Doe'),
+(NULL, 'Jane', 'Doe');
 
 INSERT INTO accounts_table VALUES
 (NULL, 1, 545454),
